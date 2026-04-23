@@ -1,0 +1,78 @@
+{
+  "id": "penjualan-env-sqa-2024",
+  "name": "PenjualanEnv",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "default",
+      "enabled": true,
+      "description": "Base URL backend FastAPI. Sesuaikan jika port berbeda."
+    },
+    {
+      "key": "token",
+      "value": "",
+      "type": "secret",
+      "enabled": true,
+      "description": "JWT Access Token. Diisi otomatis setelah request POST /token berhasil."
+    },
+    {
+      "key": "kategori_id",
+      "value": "",
+      "type": "default",
+      "enabled": true,
+      "description": "ID kategori. Diisi otomatis setelah POST /kategori berhasil."
+    },
+    {
+      "key": "produk_id",
+      "value": "",
+      "type": "default",
+      "enabled": true,
+      "description": "ID produk utama. Diisi otomatis setelah POST /produk berhasil."
+    },
+    {
+      "key": "produk_id_1",
+      "value": "",
+      "type": "default",
+      "enabled": true,
+      "description": "ID produk pertama untuk skenario transaksi multi-item (Pensil 2B)."
+    },
+    {
+      "key": "produk_id_2",
+      "value": "",
+      "type": "default",
+      "enabled": true,
+      "description": "ID produk kedua untuk skenario transaksi multi-item (Buku Tulis)."
+    },
+    {
+      "key": "harga_produk_1",
+      "value": "",
+      "type": "default",
+      "enabled": true,
+      "description": "Harga produk 1, disimpan untuk kalkulasi total transaksi di test script."
+    },
+    {
+      "key": "harga_produk_2",
+      "value": "",
+      "type": "default",
+      "enabled": true,
+      "description": "Harga produk 2, disimpan untuk kalkulasi total transaksi di test script."
+    },
+    {
+      "key": "pelanggan_id",
+      "value": "",
+      "type": "default",
+      "enabled": true,
+      "description": "ID pelanggan. Diisi otomatis setelah POST /pelanggan berhasil."
+    },
+    {
+      "key": "transaksi_id",
+      "value": "",
+      "type": "default",
+      "enabled": true,
+      "description": "ID transaksi. Diisi otomatis setelah POST /transaksi (happy path) berhasil."
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "description": "Environment untuk Ujian Praktikum SQA - Sistem Penjualan Sederhana. Semua variabel dengan value kosong akan terisi otomatis melalui test scripts pada collection."
+}
